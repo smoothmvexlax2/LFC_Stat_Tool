@@ -7,16 +7,11 @@ Created on Sun Apr  8 13:55:55 2018
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
-#import sklearn as sk
 import scipy as sp
 import scipy.stats as st
 import statsmodels.api as sm
-#import statsmodels.formula.api as smfa
 import seaborn as sns
 
-#my path r'C:\Users\Owner\Downloads\train.csv
-# read the data and store data in DataFrame titled melbourne_data
-# print a summary of the data in Melbourne data
 class MyInferTool:
     #reads comma seperated value formatted files
     #converts csv file to pandas dataframe
@@ -402,21 +397,3 @@ class MyInferTool:
         plt.title('Regression with '+x.columns[1])
         plt.legend()
         return(result)
-    
-    
-#def regress():
-#    df = collectData()
-#    quant, qual = splitDf(df)
-#    figind = 1
-#    for label in quant:
-#        x1 = df[label]
-#        y1 = df['SalePrice']
-#        coef = np.corrcoef(x1 ,y=y1)
-#        slope, intercept, r_value, p_value, std_err = sp.stats.linregress(x1, y1)
-#        plt.figure(figind)
-#        plt.plot(x1, y1, 'o', label='original data')
-#        plt.plot(x1, intercept + slope*x1, 'r', label='fitted line')
-#        plt.legend()
-#        plt.title('Regression with '+label)
-#        plt.show()
-#        figind +=1

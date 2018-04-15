@@ -10,6 +10,7 @@ If one is not careful, the number of graph outputs can cause runtime errors. My 
 - pandas
 - seaborn
 - matplotlib
+- statsmodels
 
 # Possible Upgrades
 1) I may update this wrapper to read other files besides csv. 
